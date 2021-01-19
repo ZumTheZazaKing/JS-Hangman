@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="hangman image.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Hangman</title>
+</head>
+<body onkeydown="guess(event)">
+
+    <div id="modal">
+
+        <div id="modal-content">
+
+            <img id="imageSecond" src="" alt="">
+
+            <p id="message">Sample Text</p>
+            
+            <p class="btn playAgain" onclick="reload()">Play Again</p>
+
+        </div>
+
+    </div>
+
+    <div id="container">
+        <p id="title">Hangman</p>
+
+        <img id="imageOne" src="hangman image.png" alt="image">
+
+        <p id="desc">
+            Guess the word and prevent death!<br>
+            (Press a key on your keyboard to guess a letter)
+        </p>
+    
+        <p id="wordSpace" class="hide"></p>
+    
+        <p id="guesses">Guesses Left: <span id="count">5</span></p>
+
+    </div>
+
+    <p class="btn shuffle" onclick="getAnotherWord()">Get Another Word</button>
+    
+    <p id="advice">Please acquire a wider screen</p>
+    
+    <script defer src="script.js"></script>
+</body>
+</html>

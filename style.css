@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+    flex-direction: column
+}
+
+#container{
+    text-align: center;
+    margin-top: 5%;
+}
+
+#title{
+    font-size: 48px;
+    font-family: 'Quicksand';
+    margin: 0;
+}
+
+#imageOne{
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+}
+
+#desc{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+button{
+    padding: 10px 5px;
+    font-size: 32px;
+    background-color: brown;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+#guesses{
+    font-family: 'Quicksand';
+    font-size: 24px;
+}
+
+#advice{
+    font-family: 'Quicksand';
+    font-size: 36px;
+    display: none;
+}
+
+
+.btn{
+    font-size: 24px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-family: 'Quicksand';
+    cursor: pointer;
+    transition: .2s ease-in;
+    text-align: center;
+}
+
+.shuffle{
+    color: deeppink;
+    border: 1px solid deeppink;
+}
+
+.shuffle:hover{
+    color: white;
+    background-color: deeppink;
+}
+
+#modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+#imageSecond{
+    width: 100px;
+    height: 100px;
+}
+
+#modal-content{
+    width: 40%;
+    margin: 10% auto;
+    background-color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding-top:30px ;
+    transition: .2s ease-in;
+    animation-name: a;
+    animation-duration: .2s;
+}
+
+@keyframes a{
+
+    from{transform: scale(.2);}
+    to{transform: scale(1);}
+
+}
+
+.playAgain{
+    color: blue;
+    border: 1px solid blue;
+}
+
+.playAgain:hover{
+    color: white;
+    background-color: blue;
+}
+
+@media only screen and (max-width: 1060px){
+
+    #container{
+        display: none;
+    }
+
+    #advice{
+        display: block;
+    }
+
+}
