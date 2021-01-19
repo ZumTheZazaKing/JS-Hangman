@@ -9,6 +9,8 @@ had to use all sorts of javascript methods to code this
 
 took me hours
 
+the images do not belong to me
+
 anyways,
 
 you can edit the code and reuqest a pull from me
